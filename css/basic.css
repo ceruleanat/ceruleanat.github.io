@@ -22,10 +22,10 @@
 }
 
 #navbar {
-	font-family: Consolas;
+	font-family: 'Roboto Mono', monospace;
 }
 
 .nav-item {
-	font-family: Consolas;
+	font-family: 'Roboto Mono', monospace;
 	font-size: 15;
 }

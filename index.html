@@ -64,7 +64,7 @@
           </div>
 
         <!--ABOUT ME-->
-          <div id="about" class="border col-sm my-5">
+          <div id="about" class="border col-sm my-5 text-dark">
 
                 <h3>About Me:</h3>
                 <p>Greetings! I am Natalie Farrell - a software developer residing in Portland, OR.</p>
@@ -82,11 +82,27 @@
       <!--PROJECTS-->
       <div class="col-sm my-3">
 
-          <h3 id="portfolio">Portfolio:</h3>
-          <p>Coming soon to an electronic device near you.</p>
+          <h3 id="portfolio" class="text-dark">Portfolio:</h3>
+          <p class="text-dark">Coming soon to an electronic device near you.</p>
           <img class="img-fluid" src="./images/comingsoon.jpg" alt=""/>
     </div>
       <!--END PROJECTS-->
+
+      <!-- signup form -->
+      <div class="row">
+          <div class="container text-center col-md-6" id="deals">
+            <div class="container text-center">
+              <h1 class="display-5 my-4 col-lg-auto text-dark">Stay current on my projects!</h1>
+              <div class="input-group mb-5 input-group-sm">
+                <input type="text" class="form-control" placeholder="Email">
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-secondary btn-dark popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive project updates!"> Sign up!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end signup form -->
 
       <!-- PERSONAL LINKS/CONTACT-->
 
@@ -121,5 +137,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
+    </script>
   </body>
 </html>

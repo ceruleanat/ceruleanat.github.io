@@ -1,0 +1,1 @@
+$('#home').fadeInLeft('animated fadeInLeft');

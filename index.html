@@ -103,6 +103,23 @@
           </div>
         </div>
         <!-- end signup form -->
+      
+      <!-- Time -->
+      <p>Thank you for stopping by! The time is:</p>
+
+      <p id="demo"></p>
+
+      <script>
+      var myVar = setInterval(myTimer, 1000);
+
+      function myTimer() {
+      var d = new Date();
+      document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+      }
+      </script>
+      <!-- End Time -->
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
       <!-- PERSONAL LINKS/CONTACT-->
 
@@ -133,6 +150,25 @@
 </div>
 
     <!-- Optional JavaScript -->
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+        } else {
+          document.getElementById("myBtn").style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+      
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -143,5 +179,6 @@
         trigger: 'focus'
       })
     </script>
+    <script>$('#yourElement').fadeInLeft('animated fadeInLeft');</script>
   </body>
 </html>

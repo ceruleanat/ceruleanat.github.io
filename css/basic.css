@@ -15,6 +15,10 @@
 	color: #fff;
 }
 
+.bg-body {
+    background-color: #18191b;
+}
+
 .head-main {
 	font-family: 'Anton', sans-serif;
 	font-size: 155px ;

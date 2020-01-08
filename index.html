@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/basic.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Form PHP -->
+    <link rel="stylesheet" href="./mail.php">
 
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -172,12 +174,14 @@
       <br>
       <!-- Contact form -->
       <h4><center>Get in touch:</center></h4>
-      <form>      
-        <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-        <input name="email" type="text" class="feedback-input" placeholder="Email" />
-        <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
-        <input type="submit" value="SUBMIT"/>
-      </form>
+      <div class="container">
+        <form action="action_page.php"> 
+          <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+          <input name="email" type="text" class="feedback-input" placeholder="Email" />
+          <textarea name="message" class="feedback-input" placeholder="Message"></textarea>
+          <input type="submit" value="SUBMIT"/>
+        </form>
+      </div>
       <!-- END contact form -->
       
       <!-- Time -->

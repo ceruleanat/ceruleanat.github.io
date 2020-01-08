@@ -10,8 +10,8 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 */
 
 // an email address that will be in the From field of the email.
-$fromEmail = 'demo@domain.com';
-$fromName = 'Demo contact form';
+$fromEmail = '';
+$fromName = '';
 
 // an email address that will receive the email with the output of the form
 $sendToEmail = 'info@natalie-farrell.com';

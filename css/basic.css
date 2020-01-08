@@ -1,4 +1,4 @@
-
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
 
 #home {
 	background: url(../images/mac.jpg) no-repeat 50% 50%;
@@ -61,3 +61,56 @@
 	font-weight: bold;
 	color: #85929E;
 }
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* Contact form css
+-------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+
+body { background:rgb(30,30,40); }
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:18191b;
+  font-family: 'Roboto Mono', monospace;
+  font-weight:500;
+  font-size: 13px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #18191b;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Roboto Mono', monospace;
+  width: 100%;
+  background:#18191b;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:13px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:300;
+}
+[type="submit"]:hover { background:#CC4949; }

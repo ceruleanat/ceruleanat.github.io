@@ -1,6 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // ----------------------------------------
+    // Mobile Navigation
+    // ----------------------------------------
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const mobileNav = document.querySelector('.desktop-nav');
+
+    if (hamburgerBtn && mobileNav) {
+        hamburgerBtn.addEventListener('click', () => {
+            document.body.classList.toggle('nav-open');
+            mobileNav.classList.add('mobile-nav');
+        });
+
+        // Close menu when a link is clicked
+        const navLinks = mobileNav.querySelectorAll('.nav-links a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.body.classList.remove('nav-open');
+            });
+        });
+    }
+
+    // ----------------------------------------
     // Intersection Observer for section animations
     // ----------------------------------------
     const sections = document.querySelectorAll('.content-section');
@@ -17,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ----------------------------------------
     // Active navigation link highlighting on scroll
     // ----------------------------------------
-    const navLinks = document.querySelectorAll('nav.side-nav .nav-links a');
+    const mainNavLinks = document.querySelectorAll('nav .nav-links a');
     const allSections = document.querySelectorAll('main section');
     const highlightNav = () => {
         let currentSectionId = '';
@@ -27,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentSectionId = section.getAttribute('id');
             }
         });
-        navLinks.forEach(link => {
+        mainNavLinks.forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href').substring(1) === currentSectionId) {
                 link.classList.add('active');
@@ -47,8 +68,5 @@ document.addEventListener('DOMContentLoaded', () => {
         document.documentElement.style.setProperty('--mouse-y', y + 'px');
     };
     window.addEventListener('mousemove', updateCursor);
-
-    // The Interactive Logo Animation has been removed.
-    // The spin and glow are now handled entirely by CSS.
 
 });

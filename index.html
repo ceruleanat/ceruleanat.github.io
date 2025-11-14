@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natalie Farrell | IT & Software Professional</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="style.css?v=1.2"> <!-- Incremented cache buster -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,41 +14,44 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body id="top">
+
+    <!-- NEW MOBILE HEADER (Hidden on desktop) -->
+    <header class="mobile-header">
+        <a href="#top" class="mobile-logo" aria-label="Go to top">
+            <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="7" y="5.5" width="10" height="13" rx="2" ry="2" />
+                <path d="M7 10 c 1.5 -1 3.5 -1.5 5 -1.5 s 3.5 0.5 5 1.5" />
+                <path d="M9 7.5 c 0.7 -0.8 1.5 -1.1 3 -1.1 s 2.3 0.3 3 1.1 c -0.4 0.7 -1.2 1.2 -3 1.2 s -2.6 -0.5 -3 -1.2" />
+                <path d="M12 3.5 L13.5 6" />
+                <circle cx="10" cy="8.2" r="0.6" fill="currentColor" stroke="none" />
+                <circle cx="13" cy="8.6" r="0.6" fill="currentColor" stroke="none" />
+                <circle cx="15.2" cy="7.9" r="0.6" fill="currentColor" stroke="none" />
+                <path d="M8.7 15.5 c 1.0 0.6 2.2 0.9 3.3 0.9 s 2.3 -0.3 3.3 -0.9" />
+            </svg>
+        </a>
+        <button class="hamburger-btn" aria-label="Open navigation menu">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </button>
+    </header>
 
     <!-- LEFT VERTICAL NAVIGATION -->
-    <nav class="side-nav">
+    <nav class="side-nav desktop-nav">
         <a href="#top" class="logo-link" aria-label="Go to top">
             <div class="logo" id="logo">
                 <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                    <!-- Glass -->
                     <rect x="7" y="5.5" width="10" height="13" rx="2" ry="2" />
-
-                    <!-- Matcha surface (slightly wavy) -->
-                    <path d="M7 10
-           c 1.5 -1 3.5 -1.5 5 -1.5
-           s 3.5 0.5 5 1.5" />
-
-                    <!-- Whipped cream mound -->
-                    <path d="M9 7.5
-           c 0.7 -0.8 1.5 -1.1 3 -1.1
-           s 2.3 0.3 3 1.1
-           c -0.4 0.7 -1.2 1.2 -3 1.2
-           s -2.6 -0.5 -3 -1.2" />
-
-                    <!-- Straw -->
+                    <path d="M7 10 c 1.5 -1 3.5 -1.5 5 -1.5 s 3.5 0.5 5 1.5" />
+                    <path d="M9 7.5 c 0.7 -0.8 1.5 -1.1 3 -1.1 s 2.3 0.3 3 1.1 c -0.4 0.7 -1.2 1.2 -3 1.2 s -2.6 -0.5 -3 -1.2" />
                     <path d="M12 3.5 L13.5 6" />
-
-                    <!-- Boba pearls -->
                     <circle cx="10" cy="8.2" r="0.6" fill="currentColor" stroke="none" />
                     <circle cx="13" cy="8.6" r="0.6" fill="currentColor" stroke="none" />
                     <circle cx="15.2" cy="7.9" r="0.6" fill="currentColor" stroke="none" />
-
-                    <!-- Subtle liquid level line inside glass -->
-                    <path d="M8.7 15.5
-           c 1.0 0.6 2.2 0.9 3.3 0.9
-           s 2.3 -0.3 3.3 -0.9" />
+                    <path d="M8.7 15.5 c 1.0 0.6 2.2 0.9 3.3 0.9 s 2.3 -0.3 3.3 -0.9" />
                 </svg>
             </div>
         </a>

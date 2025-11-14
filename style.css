@@ -80,6 +80,7 @@ a:hover { opacity: 0.8; }
     font-family: var(--font-mono);
     cursor: pointer;
     transition: all 0.25s;
+    display: inline-block;
 }
 .button:hover { background-color: var(--accent-tint); }
 
@@ -214,6 +215,7 @@ a:hover { opacity: 0.8; }
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    align-items: center; 
 }
 .hero-image {
     width: 225px;

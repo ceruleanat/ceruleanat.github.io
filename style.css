@@ -127,6 +127,7 @@ a:hover { opacity: 0.8; }
 #hero h2 { color: var(--light-slate); }
 #hero .accent-color { font-size: 15px; font-family: var(--font-mono); }
 #about .about-text { max-width: 700px; }
+.about-photo { display: block; width: 100%; max-width: 450px; margin: 40px auto 0; border-radius: 8px; box-shadow: 0 10px 30px -15px var(--purple-shadow); }
 .job { margin-bottom: 2rem; }
 .job h3 { font-size: 20px; margin-bottom: 0.25rem; font-weight: 500; color: var(--lightest-slate); font-family: var(--font-mono); }
 .job .job-duration { color: var(--light-slate); font-size: 13px; margin-bottom: 1rem; font-family: var(--font-mono); }
